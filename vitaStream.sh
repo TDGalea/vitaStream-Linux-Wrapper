@@ -28,7 +28,7 @@ Run from command line to check."; fi
 fi
 
 # Exit if no mode passed.
-[[ -z $1 ]] && printf "Need to know whether to stream now or become watcher.\n($0 [stream/watcher])" >&2 && exit 3
+[[ -z $1 ]] && printf "Need to know whether to stream now or become watcher.\n($0 [stream/watcher])\n" >&2 && exit 3
 
 if [[ "$1" = "watcher" ]]; then # Watcher mode.
 	trap 'quit' SIGHUP SIGINT SIGTERM # Watcher needs to clear up the lockfile on exit.
