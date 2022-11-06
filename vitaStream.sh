@@ -2,8 +2,9 @@
 device="/dev/video0" # Video device to use. You'll need to figure this out yourself & edit this line accordingly.
 # If you're on a laptop or otherwise have a webcam, you very likely will need to do so.
 title="VitaStream" # Title used in notifications.
-icon="/usr/share/icons/vita-white.ico" # Icon to use in notifications.
-notify="notify-send -a $title -i $icon" # notify-send formatting.
+# icon="/usr/share/icons/vita.ico" # Icon to use in notifications. Uncomment if you want to use one.
+# notify="notify-send -a $title -i $icon" # notify-send formatting, with icon. Uncomment this line and comment the one below to use.
+notify="notify-send -a $title" # notify-send formatting, without icon. Uncomment this line and comment the one above to use.
 lockfile="/tmp/.VitaStream.lock" # File used to identify whether a watcher is already running.
 mplayer='mplayer tv:// -tv driver=v4l2:device='$device':width=960:height=544 -title '$title # mplayer command string.
 
