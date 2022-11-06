@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=VitaStream
+Exec=/usr/bin/vitaStream stream
+Type=Application
+Terminal=false
+Categories=Application;Game
+Icon=/usr/share/icons/vita-white.ico
+Comment=Makes streaming your PS Vita via mplayer a breeze
+Actions=Configure;
